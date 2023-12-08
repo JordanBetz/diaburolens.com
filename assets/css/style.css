@@ -1,0 +1,665 @@
+/* Importieren von Schriftarten */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('../css/uikit.min.css');
+
+/* Globale Stile */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Orbitron', Arial, sans-serif;
+    color: #FFFFFF;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(58, 0, 65, 0.8));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.background {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(58, 0, 65, 0.8));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background-graphic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(50%);
+    background-image: url("../images/graphic/graphic-1.png");
+    z-index: 0;
+}
+
+#logo-container {
+    text-align: center;
+    top: 0;
+    left: 0;
+   /* width: 100%; */
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 999;
+}
+
+
+.fixed-logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(41, 41, 41, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 999;
+}
+
+
+.logo-image {
+    max-width: 20%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logo-image:hover {
+    transform: scale(1.02);
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    padding-top: 20px;
+}
+
+/* Navigation */
+
+.header {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: #6b0a77 !important;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#street-font {
+    font-weight: bold;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Stile für die Navigationslinks */
+
+.navigation {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navigation a:hover {
+    color: #4e0058; 
+    transform: scale(1.05);
+}
+
+/* Überlappende Header */
+
+#me {
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+#work .header {
+    color: #6b0a77; 
+}
+
+#work {
+    margin-top: 20px;
+}
+
+/* Bilder in Kategorieklasse */
+
+.category {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background: transparent;
+    border: 0;
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+}
+
+#under-construction {
+    margin-top: 200px;
+    color: #6b0a77; 
+}
+
+#street.img .header {
+    color: #6b0a77; 
+}
+
+/* Stil für die quadratischen Bilder */
+
+.front-pictures {
+    width: 70%; 
+    padding-bottom: -100%;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* "categories" Container zentrieren */
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-container {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.img-uk {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    padding-right: 0px;
+    transition: transform 0.3s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        
+}
+
+.img-uk:hover {
+    transform: scale(1.03);
+}
+
+.headline {
+    font-family: 'Orbitron', sans-serif;
+    color: #3f0147; 
+}
+
+#headline-container {
+    margin-top: 20px;
+}
+
+#headline-gallery-container {
+    margin-top: 20px;
+    color: #6b0a77; 
+}
+
+.text-wrapper {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: larger;
+}
+
+#image-wrapper-container {
+    justify-content: center;
+    display: flex;
+    padding: 0 0px;
+    background-color: transparent;
+    background: transparent;
+}
+
+.img-uk.enlarge-image {
+    justify-content: center;
+    display: auto;
+    width: 20%; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    margin-top: 25px;
+    margin-right: 70px; 
+    margin-left: 60px; 
+    margin-bottom: 25px;
+    transition: transform 0.3s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.img-uk.enlarge-image:hover {
+    transform: scale(1.03);
+}
+.source:hover {
+    cursor: pointer;
+}
+
+/* Kontaktformular*/
+
+/* Kontaktformular-Stile */
+#contact-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; 
+    border-radius: 10px;
+    color: white; 
+    box-sizing: border-box;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    display: block;
+    color: white; 
+  /*  margin-bottom: 10px; */
+}
+
+#contact-form textarea {
+    height: 200px; 
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #444; 
+    border: none;
+    border-radius: 5px;
+    color: white; 
+    display: block;
+   /* margin-bottom: 10px; */
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #6b0a77; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+
+#contact-form button:hover {
+    background-color: #480052; 
+}
+
+
+/* Show more button */
+
+.show-more {
+    background-color: transparent; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    text-align: center; 
+    display: block; 
+    margin: 10px auto; 
+    cursor: pointer; 
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.show-more:hover {
+    background-color: transparent;
+    color: #6b0a77; 
+    text-decoration: underline;
+}
+
+
+/* Back to Top Button*/
+
+.back-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6b0a77;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  .back-to-top-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .arrow-up {
+    display: block;
+
+  }
+  
+  .arrow-up::before {
+    content: '\2191'; 
+    font-size: 24px;
+  }
+  
+
+
+
+/* Footer-Stile */
+footer {
+    color: white;
+    text-align: center; 
+    padding: 20px 0;
+}
+
+#socials-font {
+    font-size: 24px !important;
+}
+
+.social-icons, .Imprint {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 20px 0;
+    list-style: none; 
+}
+
+.social-icon, .Imprint li {
+    margin: 0 10px; 
+}
+
+.social-icon img, .Imprint a {
+    max-width: 30px;
+    height: auto;
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out; 
+}
+
+.social-icons a:hover, .Imprint a:hover {
+    color: #6b0a77; 
+    transform: scale(1.08); 
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #FFFFFF;
+        overflow-x: hidden;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Orbitron', sans-serif;
+        z-index: 0;
+    }
+
+    .background {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(58, 0, 65, 0.8));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /* Stellt sicher, dass der Hintergrund den gesamten Bildschirm abdeckt */
+}
+
+    .category, .image-container {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .img-uk.enlarge-image {
+        width: 100%; 
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .container, .text-wrapper {
+        padding: 10px;
+    }
+    
+    .logo-image {
+        max-width: 50%; 
+    }
+    
+    .header {
+        font-size: 20px; 
+    }
+    
+    .navigation a, .Imprint a {
+        font-size: 14px; 
+    }
+    
+    .social-icon img {
+        max-width: 20px; 
+    }
+
+    #contact-form {
+        max-width: 90%; 
+        padding: 15px; 
+    }
+
+    #contact-form textarea {
+        height: 150px; 
+    }
+
+    #socials {
+        padding-bottom: 60px;
+    }
+}
+
+/* Spezifische Anpassungen für iPhone-Bildschirme (375px) */
+
+@media screen and (max-width: 390px) {
+
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #FFFFFF;
+        overflow-x: hidden;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Orbitron', sans-serif;
+        z-index: 0;
+    }
+
+    .background {
+        background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(58, 0, 65, 0.8));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; /* Stellt sicher, dass der Hintergrund den gesamten Bildschirm abdeckt */
+    }
+
+    .category, .image-container {
+        flex-basis: 48%; 
+        margin: 1%; 
+    }
+    
+    .img-uk.enlarge-image {
+        width: 48%; 
+    }
+
+    /* Optional: Anpassungen für andere Elemente je nach Bedarf */
+    .image-container {
+        width: 48%; 
+        margin: 1%; 
+        display: inline-block; 
+    }
+
+    #contact-form label,
+    #contact-form input,
+    #contact-form textarea,
+    #contact-form button {
+        font-size: 14px; 
+    }
+
+    #contact-form textarea {
+        height: 200px; 
+    }
+
+    #contact-form button {
+        padding: 8px 16px; 
+    }
+
+    .footer {
+        padding-bottom: 60px;
+    }
+
+    #socials {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #FFFFFF;
+        overflow-x: hidden;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Orbitron', sans-serif;
+        z-index: 0;
+    }
+
+    .background {
+        background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(58, 0, 65, 0.8));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; /* Stellt sicher, dass der Hintergrund den gesamten Bildschirm abdeckt */
+    }
+    
+    #logo-container {
+        padding: 10px; 
+        margin: 0 auto; 
+        max-width: 375px; 
+    }
+    .container {
+        max-width: 100%; 
+        box-sizing: border-box; 
+    }
+    
+    .categories {
+        justify-content: space-between; 
+    }
+
+    .category {
+        width: 49%; 
+        margin: 0.5%; 
+        
+    }
+
+    .category, .image-container {
+        flex-basis: 48%; 
+        margin: 1%; 
+    }
+
+    .front-pictures{
+        width: 100%; 
+        height: auto; 
+        margin: 0;
+        display: block;
+    }
+    
+    .img-uk.enlarge-image {
+        width: 48%; 
+        height: auto; 
+        margin: 0; 
+        margin-bottom: 5px;
+    }
+
+    .headline {
+        font-size: 1.2rem; 
+        margin-top: 15px; 
+    }
+
+    #under-construction {
+        font-size: 1rem; 
+        margin-top: 120px; 
+    }
+
+    .back-to-top-button {
+        z-index: 99;
+    }
+
+    #street.img {
+        display: block;
+    }
+
+    #contact-form {
+        padding: 10px; 
+    }
+
+    #contact-form label,
+    #contact-form input,
+    #contact-form textarea,
+    #contact-form button {
+        font-size: 12px; 
+    }
+
+    #contact-form textarea {
+        height: 250px; 
+    }
+
+    #socials {
+        padding-bottom: 60px;
+    }
+
+}
+

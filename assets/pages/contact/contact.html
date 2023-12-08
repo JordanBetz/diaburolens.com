@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DiaburoLens Homepage</title>
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <div class="background">
+    <div class="background-graphic"></div>
+    <header>
+        <div class="container" id="logo-container">
+            <a href="/index.html">
+                <img src="/assets/images/logo/logo.PNG" alt="Logo" class="logo-image">
+            </a>
+        </div>
+    </header>
+    
+   <!-- <nav>
+        <div class="container">
+                <ul>
+                    <li class="navigation"><a href="/index.html">Home</a></li>
+                    <li class="navigation"><a href="/index.html#about">About</a></li>
+                    <li class="navigation"><a href="/index.html#work">Work</a></li>
+                    <li class="navigation"><a href="/index.html#socials">Socials</a></li>
+                </ul>
+        </div>
+    </nav>-->
+    
+    <div class="container">
+        <h1 class="header">Kontaktformular</h1>
+        <form id="contact-form" action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <div class="g-recaptcha" data-sitekey="6Lc92hMpAAAAANhjaLH9ECAZ2gAINIxQyUv4iOAt"></div>
+            <button type="submit" id="submit-button">Send</button>
+        </form>
+    
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </div>
+
+    <div id="success-popup" style="display: none; position: fixed; top: 20%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border: 1px solid black; z-index: 1000;">
+        Message sent successfully
+    </div>
+
+    <div id="back-to-top" class="back-to-top-button">
+        <a href="#" class="back-to-top-link">
+          ^
+        </a>
+    </div>      
+    
+    <footer id="socials">
+        <div class="container">
+            <h1 class="header" id="socials-font">Socials</h1>
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.instagram.com/diaburo.lens/" target="_blank"><img src="/assets/images/icons/instagram.png" alt="Instagram"></a>
+                <a class="social-icon" href="https://www.twitter.com/DiaburoLens" target="_blank"><img src="/assets/images/icons/twitter.png" alt="Twitter"></a>
+               <!-- <a class="social-icon" href="https://www.youtube.com/channel/UCWEuAeqBVquJJrqxsLHosuA" target="_blank"><img src="/assets/images/icons/youtube.png" alt="YouTube"></a>
+                <a class="social-icon" href="https://www.tiktok.com/@diaburolens" target="_blank"><img src="/assets/images/icons/tiktok.png" alt="TikTok"></a>-->
+            </div>
+            <ul class="Imprint">
+                <li><a href="/assets/pages/imprint/imprint.html">Imprint</a></li>
+                <li><a href="/assets/pages/contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
